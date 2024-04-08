@@ -1,7 +1,6 @@
 var express = require('express')
 var Unblocker = require('unblocker');
 var app = express();
-const helmet = require('helmet');
 var unblocker = new Unblocker({prefix: '/boom/'});
 app.use(unblocker);
 app.use(express.static('public'))
