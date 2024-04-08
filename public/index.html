@@ -16,7 +16,7 @@
         if(!val.includes('://')){
           val = "https://google.com/search?q=" + val
         }
-        window.location.href = "/boom/"+val
+        window.location.href = "/boom/"+val.replace("http://", "https://")
       }
     }
   </script>
