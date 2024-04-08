@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama's proxy</title>
+    <link href="https://images.emojiterra.com/google/android-11/512px/1f4a5.png" rel="icon">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <center><h1>Osama</h1><br><input type="text"></center>
+  <script>
+    onkeydown = (e) =>{
+      let val = document.querySelector("input[type='text']").value
+      if(e.key == "Enter"){
+        if(!val.includes('://')){
+          val = "https://google.com/search?q=" + val
+        }
+        window.location.href = "/boom/"+val
+      }
+    }
+  </script>
+</body>
+</html>
